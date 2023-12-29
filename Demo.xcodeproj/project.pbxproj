@@ -16,6 +16,22 @@
 		9D7561A22B3E0C020056ADDE /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561A12B3E0C020056ADDE /* DemoTests.swift */; };
 		9D7561AC2B3E0C020056ADDE /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561AB2B3E0C020056ADDE /* DemoUITests.swift */; };
 		9D7561AE2B3E0C020056ADDE /* DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561AD2B3E0C020056ADDE /* DemoUITestsLaunchTests.swift */; };
+		9D7561BC2B3E0C4C0056ADDE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561BA2B3E0C4C0056ADDE /* SearchViewController.swift */; };
+		9D7561BD2B3E0C4C0056ADDE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561BA2B3E0C4C0056ADDE /* SearchViewController.swift */; };
+		9D7561BE2B3E0C4C0056ADDE /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D7561BB2B3E0C4C0056ADDE /* SearchViewController.xib */; };
+		9D7561BF2B3E0C4C0056ADDE /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D7561BB2B3E0C4C0056ADDE /* SearchViewController.xib */; };
+		9D7561C12B3E0D1A0056ADDE /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561C02B3E0D1A0056ADDE /* SearchViewModel.swift */; };
+		9D7561C22B3E0D1A0056ADDE /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561C02B3E0D1A0056ADDE /* SearchViewModel.swift */; };
+		9D7561C42B3E0D2D0056ADDE /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561C32B3E0D2D0056ADDE /* SearchManager.swift */; };
+		9D7561C52B3E0D2D0056ADDE /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561C32B3E0D2D0056ADDE /* SearchManager.swift */; };
+		9D7561C72B3E11D40056ADDE /* Rental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561C62B3E11D40056ADDE /* Rental.swift */; };
+		9D7561C82B3E11D40056ADDE /* Rental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561C62B3E11D40056ADDE /* Rental.swift */; };
+		9D7561CA2B3E417A0056ADDE /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561C92B3E417A0056ADDE /* SearchTableViewCell.swift */; };
+		9D7561CB2B3E417A0056ADDE /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561C92B3E417A0056ADDE /* SearchTableViewCell.swift */; };
+		9D7561CD2B3E703C0056ADDE /* SearchDependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561CC2B3E703C0056ADDE /* SearchDependencyResolver.swift */; };
+		9D7561CE2B3E703C0056ADDE /* SearchDependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561CC2B3E703C0056ADDE /* SearchDependencyResolver.swift */; };
+		9D7561D02B3E73840056ADDE /* MockSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561CF2B3E73840056ADDE /* MockSearchManager.swift */; };
+		9D7561D12B3E73840056ADDE /* MockSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7561CF2B3E73840056ADDE /* MockSearchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +65,14 @@
 		9D7561A72B3E0C020056ADDE /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7561AB2B3E0C020056ADDE /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
 		9D7561AD2B3E0C020056ADDE /* DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D7561BA2B3E0C4C0056ADDE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9D7561BB2B3E0C4C0056ADDE /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		9D7561C02B3E0D1A0056ADDE /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		9D7561C32B3E0D2D0056ADDE /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
+		9D7561C62B3E11D40056ADDE /* Rental.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rental.swift; sourceTree = "<group>"; };
+		9D7561C92B3E417A0056ADDE /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		9D7561CC2B3E703C0056ADDE /* SearchDependencyResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDependencyResolver.swift; sourceTree = "<group>"; };
+		9D7561CF2B3E73840056ADDE /* MockSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +130,13 @@
 				9D7561932B3E0C020056ADDE /* Assets.xcassets */,
 				9D7561952B3E0C020056ADDE /* LaunchScreen.storyboard */,
 				9D7561982B3E0C020056ADDE /* Info.plist */,
+				9D7561BA2B3E0C4C0056ADDE /* SearchViewController.swift */,
+				9D7561BB2B3E0C4C0056ADDE /* SearchViewController.xib */,
+				9D7561C02B3E0D1A0056ADDE /* SearchViewModel.swift */,
+				9D7561C32B3E0D2D0056ADDE /* SearchManager.swift */,
+				9D7561C62B3E11D40056ADDE /* Rental.swift */,
+				9D7561C92B3E417A0056ADDE /* SearchTableViewCell.swift */,
+				9D7561CC2B3E703C0056ADDE /* SearchDependencyResolver.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -114,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				9D7561A12B3E0C020056ADDE /* DemoTests.swift */,
+				9D7561CF2B3E73840056ADDE /* MockSearchManager.swift */,
 			);
 			path = DemoTests;
 			sourceTree = "<group>";
@@ -233,6 +265,7 @@
 			files = (
 				9D7561972B3E0C020056ADDE /* LaunchScreen.storyboard in Resources */,
 				9D7561942B3E0C020056ADDE /* Assets.xcassets in Resources */,
+				9D7561BE2B3E0C4C0056ADDE /* SearchViewController.xib in Resources */,
 				9D7561922B3E0C010056ADDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7561BF2B3E0C4C0056ADDE /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +293,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D75618F2B3E0C010056ADDE /* ViewController.swift in Sources */,
+				9D7561C12B3E0D1A0056ADDE /* SearchViewModel.swift in Sources */,
 				9D75618B2B3E0C010056ADDE /* AppDelegate.swift in Sources */,
+				9D7561C72B3E11D40056ADDE /* Rental.swift in Sources */,
+				9D7561C42B3E0D2D0056ADDE /* SearchManager.swift in Sources */,
+				9D7561D02B3E73840056ADDE /* MockSearchManager.swift in Sources */,
+				9D7561CA2B3E417A0056ADDE /* SearchTableViewCell.swift in Sources */,
+				9D7561CD2B3E703C0056ADDE /* SearchDependencyResolver.swift in Sources */,
+				9D7561BC2B3E0C4C0056ADDE /* SearchViewController.swift in Sources */,
 				9D75618D2B3E0C010056ADDE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7561C82B3E11D40056ADDE /* Rental.swift in Sources */,
+				9D7561C22B3E0D1A0056ADDE /* SearchViewModel.swift in Sources */,
+				9D7561BD2B3E0C4C0056ADDE /* SearchViewController.swift in Sources */,
+				9D7561CB2B3E417A0056ADDE /* SearchTableViewCell.swift in Sources */,
+				9D7561CE2B3E703C0056ADDE /* SearchDependencyResolver.swift in Sources */,
+				9D7561D12B3E73840056ADDE /* MockSearchManager.swift in Sources */,
 				9D7561A22B3E0C020056ADDE /* DemoTests.swift in Sources */,
+				9D7561C52B3E0D2D0056ADDE /* SearchManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

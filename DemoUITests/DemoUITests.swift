@@ -38,4 +38,10 @@ final class DemoUITests: XCTestCase {
             }
         }
     }
+    
+    func testSearchScreen() {
+        XCUIApplication().windows.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .searchField).element.tap()
+        
+        
+    }
 }

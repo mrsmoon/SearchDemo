@@ -29,8 +29,33 @@ final class DemoTests: XCTestCase {
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
-            // Put the code you want to measure the time of here.
+            let viewModel = SearchViewModel(SearchDependencyResolver(MockSearchManager(.success)))
+            
+            viewModel.search(for: "Rent")
         }
+    }
+    
+    func testSearchViewModel_Success() {
+        
+        let viewModel = SearchViewModel(SearchDependencyResolver(MockSearchManager(.success)))
+        
+        viewModel.search(for: "Rent")
+        
+        XCTAssert(viewModel.dataSource.count == 5)
+        XCTAssertEqual(viewModel.dataSource[0].id, "1")
+        
+    }
+    
+    func testSearchViewModel_Failure() {
+        
+        let viewModel = SearchViewModel(SearchDependencyResolver(MockSearchManager(.failure)))
+        
+        viewModel.search(for: "Rent")
+        
+        XCTAssert(viewModel.dataSource.count == 0)
+        
+        
     }
 
 }
+
