@@ -35,8 +35,10 @@ class SearchManager: SearchProtocol {
         var urlComponents = URLComponents(string: urlString)
         urlComponents?.queryItems = queryItems
         
-        let url = urlComponents?.url
-        let (data, _) = try await URLSession.shared.data(from: url!)
+        guard let url = urlComponents?.url else {
+            throw SearchError.invalidURL
+        }
+        let (data, _) = try await URLSession.shared.data(from: url)
         let model = try JSONDecoder().decode(DataModel.self, from: data)
         return model.rentals
     }
