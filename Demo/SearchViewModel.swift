@@ -13,7 +13,7 @@ protocol ViewUpdating: AnyObject {
 protocol ViewModeling {
     var dataSource: [Rental] {get}
     var viewUpdater: ViewUpdating? { get set }
-    func search(for keyword: String)
+    func search(for keyword: String) async
 }
 
 final class SearchViewModel: ViewModeling {
@@ -32,19 +32,27 @@ final class SearchViewModel: ViewModeling {
         searchManager = dependencyResolver.resolveSearchManager() 
     }
     
-    func search(for keyword: String) {
-        searchManager.search(with: keyword) { [weak self] result in
-            switch result {
-            case .success(let rentals):
-                self?.rentals = rentals
-                DispatchQueue.main.async {
-                    self?.viewUpdater?.didSearchFinished()
-                }
-                
-            case .failure(let error):
-                print(error)
+    func search(for keyword: String) async {
+        do {
+            rentals = try await searchManager.searchRentals(for: keyword)
+            DispatchQueue.main.async { [weak self] in
+                self?.viewUpdater?.didSearchFinished()
             }
+        } catch (let error) {
+            print(error)
         }
+//        searchManager.search(with: keyword) { [weak self] result in
+//            switch result {
+//            case .success(let rentals):
+//                self?.rentals = rentals
+//                DispatchQueue.main.async {
+//                    self?.viewUpdater?.didSearchFinished()
+//                }
+//                
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
     }
 }
 

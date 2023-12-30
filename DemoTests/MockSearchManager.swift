@@ -8,6 +8,10 @@
 import Foundation
 
 final class MockSearchManager: SearchProtocol {
+    func searchRentals(for keyword: String) async throws -> [Rental] {
+        return []
+    }
+    
     enum Status {
         case success
         case failure

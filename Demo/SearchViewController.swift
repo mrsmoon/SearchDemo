@@ -49,7 +49,9 @@ extension SearchViewController: UISearchBarDelegate {
         searchWorkItem?.cancel()
         
         searchWorkItem = DispatchWorkItem(block: { [weak self] in
-            self?.viewModel.search(for: searchText)
+            Task {
+                await self?.viewModel.search(for: searchText)
+            }
         })
         
         guard let searchWorkItem = searchWorkItem else { return }
